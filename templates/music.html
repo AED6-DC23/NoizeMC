@@ -1,0 +1,30 @@
+{% extends 'default.html' %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static "css/style.css" %}" >
+
+{% block title %}
+МУЗЫКА
+{% endblock %}
+
+{% block content %}
+<div class="albom">
+    <figure>
+        <figcaption style="font-family: Oswald;">Люди с автоматами, мозня послусять:</figcaption>
+        <audio controls src="{% static "media/w.mp3" %}"></audio>        
+      </figure>
+      <figure>
+        <figcaption style="font-family: Oswald;">Атлантида:</figcaption>
+        <audio controls src="{% static "media/Atlantida.mp3" %}"></audio>        
+      </figure>
+      <figure>
+        <figcaption style="font-family: Oswald;">26.04:</figcaption>
+        <audio controls src="{% static "media/2604.mp3" %}"></audio>        
+      </figure>
+      <figure>
+        <figcaption style="font-family: Oswald;">Катацумури:</figcaption>
+        <audio controls src="{% static "media/Cat.mp3" %}"></audio>        
+      </figure>
+</div>
+
+{% endblock %}

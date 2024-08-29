@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-color: #0c0c0c;
+    font: Oswald;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.15s, background 0.15s;
+    font-family: Oswald;
+    padding: 10px;
+    color: aliceblue;
+}
+
+a:focus {
+    text-decoration: underline;
+}
+
+a:focus, a:hover {
+    color: aliceblue;
+}
+
+.nav {
+    display: flex;
+    position: relative;
+}
+
+.left {
+    border: none;
+    width: 360px;
+    font-size: 18px;
+    padding-left: 70px;
+    padding-top: 96px;
+    align-items: center;
+    
+}
+
+.right {
+    width: 380px;
+    font-size: 18px;
+    
+    padding-top: 96px;
+}
+
+.img {
+    width: 612px;
+    height: 550px;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.text {
+    display: block;
+    position: absolute;
+    padding-left: 70px;
+    padding-top: -120px;
+}
+
+.coz-tur p {
+    font-size: 20px;
+    font-family: Oswald;
+    padding-left: 70px;
+}
+
+.albom {
+    padding-top: 350px;
+    margin: 30px;
+}
+
+.albom img {
+    margin: 20px;
+}
+
+.albom1 {
+    padding-left: 345px;
+    display: inline;
+    padding: none;
+    overflow: hidden;    
+}
+
+.albom2 {
+    padding-left: 345px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+{% load static %}
+<html>
+<head>   
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
+</head>
+<body>
+    <div class='header'>
+        <div class="nav">
+            <div class="left">
+                <a href="{% url 'afisha' %}">АФИША</a>     /
+                <a href="{% url 'music' %}">МУЗЫКА</a>     /
+                <a href="{% url 'video' %}">ВИДЕО</a>     /
+                <a href="{% url 'merch' %}">МЕРЧ</a> 
+            </div>
+            <div class="img">
+                <img src="{% static "images/image.png" %}" alt="">                
+            </div>
+            <div class="right">
+                <a href="https://ya.ru/?npr=1&utm_referrer=https%3A%2F%2Fwww.google.com%2F">ЯНДЕКС</a>    /
+                <a href="https://www.apple.com/">APPLE</a>    /
+                <a href="https://www.spotify.com/int/why-not-available/">SPOTIFY</a>    /
+                <a href="{% url 'youtube' %}">YOUTUBE</a> 
+            </div>
+        </div>
+        <div class="coz-tur">
+            <p>КОНЦЕРТНЫЙ ТУР 2024 <span ><img src="{% static "images/Vector.png" %}" alt=""></span></p>  
+        </div>        
+    </div>
+    <div class="text">
+        <img src="{% static "images/N ize MC.png" %}" alt="">
+    </div>
+    {% block content %}
+    {{ flatpage.content }}
+    {% endblock %}
+</body>
+</html>
